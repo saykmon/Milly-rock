@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файлы</title>
+</head>
+<body>
+    <h1>Сохраненные файлы</h1>
+    <ul>
+        {{range .}}
+            <li>
+                <a href="/storage/{{.}}">{{.}}</a>
+            </li>
+        {{end}}
+    </ul>
+    <br>
+    <a href="/">Создать другой файл</a>
+</body>
+</html>
